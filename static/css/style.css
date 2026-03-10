@@ -233,6 +233,8 @@ body {
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
+  background: transparent;
+  isolation: isolate;
 }
 .hero-photo-ring {
   position: absolute;
@@ -261,6 +263,7 @@ body {
   object-fit: contain;
   object-position: bottom center;
   display: block;
+  mix-blend-mode: multiply;
 }
 .photo-initials {
   font-family: 'Playfair Display', serif;
