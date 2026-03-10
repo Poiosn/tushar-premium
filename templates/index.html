@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tushar Kale — Entrepreneur, Stock Market Mentor & Startup Leader</title>
+  <meta name="description" content="Official portfolio of Tushar Kale, serial entrepreneur from Pune. Founder of Driveuber, MyCab, Xworks, and Tushar Kale Trading Academy. Expert in trading, mobility tech, and business innovation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#ventures">Ventures</a></li>
+        <li><a href="#speaking">Speaking</a></li>
+        <li><a href="#story">My Story</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Connect</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+    <div class="hero-inner reveal">
+      <div class="hero-content">
+        <p class="hero-tag">Pune, India</p>
+        <h1 class="hero-title">Tushar <span class="gold">Kale</span></h1>
+        <p class="hero-subtitle">Serial Entrepreneur &nbsp;|&nbsp; Trading Mentor &nbsp;|&nbsp; Tech & Mobility Visionary</p>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-num">10<span class="gold">+</span></span>
+            <span class="stat-label">Companies Founded</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2K<span class="gold">+</span></span>
+            <span class="stat-label">Lives Impacted</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">1.5K<span class="gold">+</span></span>
+            <span class="stat-label">Traders Trained</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary">Explore Courses</a>
+          <a href="#ventures" class="btn btn-outline">View Ventures</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <div class="hero-photo">
+            <img src="{{ url_for('static', filename='images/tushar.png') }}" alt="Tushar Kale" onerror="this.style.display='none'; this.parentElement.classList.add('photo-placeholder');" />
+            <div class="photo-initials">TK</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container reveal">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">Multi-Sector Innovation.<br><span class="gold">Across Industries.</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm Tushar Kale — a serial entrepreneur from Pune spanning diverse industries including stock market education, mobility tech, cloud kitchens, and gig economy platforms. My experience covers crypto, e-commerce, appliance services, and financial education.</p>
+          <p>I believe in learning through failure, growing through adversity, and leading with purpose. Every venture I've built has taught me something that I now pass on to thousands of aspiring entrepreneurs and traders.</p>
+          <div class="about-tags">
+            <span class="tag">Financial Education</span>
+            <span class="tag">Mobility Technology</span>
+            <span class="tag">Gig Economy</span>
+            <span class="tag">Public Speaking</span>
+            <span class="tag">Business Innovation</span>
+          </div>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-chart-line gold-icon"></i>
+              <div>
+                <strong>Financial Education</strong>
+                <span>Stock market training & trading mentorship</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-car gold-icon"></i>
+              <div>
+                <strong>Mobility Technology</strong>
+                <span>Ride-hailing & transportation solutions</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-laptop-code gold-icon"></i>
+              <div>
+                <strong>Business Innovation</strong>
+                <span>Cloud kitchens, gig economy & tech solutions</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-microphone gold-icon"></i>
+              <div>
+                <strong>Public Speaking</strong>
+                <span>Management colleges & corporate events</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION & VISION -->
+  <section class="section section-dark" id="mission">
+    <div class="container reveal">
+      <div class="section-label">Purpose</div>
+      <h2 class="section-title">Mission & <span class="gold">Vision</span></h2>
+      <div class="mv-grid">
+        <div class="mv-card glass-card">
+          <div class="mv-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Mission</h3>
+          <p>"To empower individuals through financial literacy and create innovative solutions that solve real-world problems across multiple industries, fostering economic growth and entrepreneurial success."</p>
+        </div>
+        <div class="mv-card glass-card">
+          <div class="mv-icon"><i class="fas fa-eye"></i></div>
+          <h3>Vision</h3>
+          <p>"To build an ecosystem of sustainable businesses that drive positive change in education, mobility, and technology sectors, creating lasting impact for communities and stakeholders."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTURES -->
+  <section class="section" id="ventures">
+    <div class="container reveal">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Ventures & <span class="gold">Startups</span></h2>
+
+      <h3 class="ventures-sub">Active Ventures</h3>
+      <div class="ventures-grid">
+        <div class="venture-card glass-card">
+          <div class="venture-icon"><i class="fas fa-chart-bar"></i></div>
+          <div class="venture-badge">Active</div>
+          <h3>Tushar Kale Trading Academy</h3>
+          <span class="venture-year">2020 – Present &nbsp;•&nbsp; Founder & CEO</span>
+          <p>Comprehensive stock market education platform empowering 1500+ traders with practical knowledge, technical analysis, and risk management strategies.</p>
+          <div class="venture-tags">
+            <span>Stock Market</span><span>Education</span><span>Mentorship</span>
+          </div>
+        </div>
+        <div class="venture-card glass-card">
+          <div class="venture-icon"><i class="fas fa-car-side"></i></div>
+          <div class="venture-badge">Active</div>
+          <h3>DriveUber.in</h3>
+          <span class="venture-year">2019 – Present &nbsp;•&nbsp; Founder</span>
+          <p>Innovative platform supporting ride-hailing drivers with technology solutions, training, and business development services.</p>
+          <div class="venture-tags">
+            <span>Mobility</span><span>Technology</span><span>Driver Support</span>
+          </div>
+        </div>
+        <div class="venture-card glass-card">
+          <div class="venture-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="venture-badge">Active</div>
+          <h3>Xworks Solutions Pvt Ltd</h3>
+          <span class="venture-year">2021 – Present &nbsp;•&nbsp; Director</span>
+          <p>Technology solutions company providing gig economy platforms, software development, and digital transformation services.</p>
+          <div class="venture-tags">
+            <span>IT Solutions</span><span>Gig Economy</span><span>Digital Transformation</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="ventures-sub" style="margin-top:3rem;">Previous Ventures</h3>
+      <div class="prev-ventures-grid">
+        <div class="prev-venture-card glass-card">
+          <i class="fas fa-taxi gold-icon"></i>
+          <div>
+            <strong>MyCab</strong>
+            <span>2018 – 2021 &nbsp;•&nbsp; Scaled | Founder</span>
+          </div>
+        </div>
+        <div class="prev-venture-card glass-card">
+          <i class="fas fa-utensils gold-icon"></i>
+          <div>
+            <strong>The Kitchen Station</strong>
+            <span>2020 – 2022 &nbsp;•&nbsp; Pivoted | Founder & MD</span>
+          </div>
+        </div>
+        <div class="prev-venture-card glass-card">
+          <i class="fas fa-building gold-icon"></i>
+          <div>
+            <strong>KK Corp India Ltd</strong>
+            <span>2022 – 2023 &nbsp;•&nbsp; Closed | Director</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKING -->
+  <section class="section section-dark" id="speaking">
+    <div class="container reveal">
+      <div class="section-label">On Stage</div>
+      <h2 class="section-title">Speaking <span class="gold">Engagements</span></h2>
+      <div class="speaking-grid">
+        <div class="speaking-card glass-card">
+          <div class="speaking-icon"><i class="fas fa-chart-line"></i></div>
+          <div class="speaking-role">Regular Speaker</div>
+          <h3>Trading & Investment Strategies</h3>
+          <div class="speaking-venue"><i class="fas fa-map-marker-alt"></i> Management Colleges & Business Schools</div>
+          <p>Guest lectures on stock market fundamentals, technical analysis, and risk management for MBA and commerce students.</p>
+        </div>
+        <div class="speaking-card glass-card">
+          <div class="speaking-icon"><i class="fas fa-rocket"></i></div>
+          <div class="speaking-role">Keynote Speaker</div>
+          <h3>Entrepreneurship & Startups</h3>
+          <div class="speaking-venue"><i class="fas fa-map-marker-alt"></i> Corporate Events & Conferences</div>
+          <p>Keynote sessions on building successful ventures, scaling businesses, and navigating the startup ecosystem.</p>
+        </div>
+        <div class="speaking-card glass-card">
+          <div class="speaking-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="speaking-role">Industry Expert</div>
+          <h3>Gig Economy & Future of Work</h3>
+          <div class="speaking-venue"><i class="fas fa-map-marker-alt"></i> Industry Forums & Workshops</div>
+          <p>Expert sessions on mobility tech, gig economy trends, and the future of work in the digital age.</p>
+        </div>
+      </div>
+      <div class="speaking-cta glass-card">
+        <i class="fas fa-microphone-alt gold-icon"></i>
+        <p>Available for guest lectures, corporate workshops, and conference keynotes on entrepreneurship, trading, and business innovation.</p>
+        <a href="#contact" class="btn btn-primary">Book Me to Speak</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section" id="story">
+    <div class="container reveal">
+      <div class="section-label">My Journey</div>
+      <h2 class="section-title">Three Rock-Bottom Moments<br><span class="gold">That Made Me</span></h2>
+      <p class="story-intro">"After living through it all, I've come to one simple truth — life doesn't test you once; it tests you again and again, until you break… or become unbreakable."</p>
+      <div class="story-grid">
+        <div class="story-card glass-card">
+          <div class="story-num gold">01</div>
+          <h3>The Day My Mother Cried Silently</h3>
+          <p>Fresh out of SSC, unable to afford college, I became a factory helper — cleaning metal burrs and oiling machines. My mother visited the workshop and saw me covered in oil and grease, hunched over a steel platform, scrubbing like my life depended on it.</p>
+          <p class="story-quote">"There's a kind of pain that doesn't come from hunger — it comes from seeing your parent silently suffer for you. That was my first taste of rock bottom. I swore I'd never let her see me like that again."</p>
+        </div>
+        <div class="story-card glass-card">
+          <div class="story-num gold">02</div>
+          <h3>The Fall That Shattered My Comfort Zone</h3>
+          <p>After completing ITI and working at Tata Motors for three years, I fell from a 10-foot platform while welding — without safety equipment. That fall didn't just knock me down. It knocked me awake.</p>
+          <p class="story-quote">"My colleague Mr. Chatterjee said: 'Tushar, you're meant for more.' No one had ever said that before. I quit my stable job to pursue a diploma in engineering. Everyone thought I was crazy. But I wasn't chasing pride — I was chasing purpose."</p>
+        </div>
+        <div class="story-card glass-card">
+          <div class="story-num gold">03</div>
+          <h3>Drenched, Broken & Still Standing</h3>
+          <p>Jobless, failing engineering exams, relationship ended — I became a food delivery boy in heavy July rain. I climbed 8 floors (elevator broken) to deliver food. The customer abused me and didn't pay. I walked down those stairs with tears I couldn't hold back.</p>
+          <p class="story-quote">"From that day, I decided — no one, and nothing, will ever make me feel that powerless again. The pain you're going through? It's not the end. It's the foundation."</p>
+        </div>
+      </div>
+      <div class="story-quote-final glass-card">
+        <i class="fas fa-quote-left gold-icon"></i>
+        <p>"The world ain't all sunshine and rainbows. It's a very mean and nasty place... But it ain't about how hard you hit. It's about how hard you can get hit and keep moving forward. That's how winning is done."</p>
+        <span>— Rocky Balboa</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section section-dark" id="courses">
+    <div class="container reveal">
+      <div class="section-label">Learn With Me</div>
+      <h2 class="section-title">Trading <span class="gold">Courses</span></h2>
+      <div class="courses-grid">
+        <div class="course-card glass-card">
+          <div class="course-tag">Popular</div>
+          <h3>Complete Stock Market Course</h3>
+          <p>For beginners and intermediate traders. Master practical knowledge, technical analysis, and risk management with live sessions.</p>
+          <ul class="course-features">
+            <li><i class="fas fa-check-circle"></i> Price Action Trading</li>
+            <li><i class="fas fa-check-circle"></i> Smart Money Concepts</li>
+            <li><i class="fas fa-check-circle"></i> Futures & Options (F&O)</li>
+            <li><i class="fas fa-check-circle"></i> Cryptocurrency Trading</li>
+          </ul>
+          <div class="course-footer">
+            <span class="price">₹15,000</span>
+            <a href="https://wa.me/918208526332" target="_blank" class="btn btn-primary btn-sm">Enroll Now</a>
+          </div>
+        </div>
+        <div class="course-card glass-card featured-course">
+          <div class="course-tag featured-tag">Premium</div>
+          <div class="popular-badge"><i class="fas fa-fire"></i> Best Value</div>
+          <h3>Pro Trader Program</h3>
+          <p>Advanced strategies for serious traders. Includes personalized 1-on-1 mentorship sessions with Tushar directly.</p>
+          <ul class="course-features">
+            <li><i class="fas fa-check-circle"></i> Advanced Price Action</li>
+            <li><i class="fas fa-check-circle"></i> Algorithmic Trading</li>
+            <li><i class="fas fa-check-circle"></i> Portfolio Management</li>
+            <li><i class="fas fa-check-circle"></i> Risk Management Systems</li>
+            <li><i class="fas fa-check-circle"></i> 1-on-1 Mentorship</li>
+          </ul>
+          <div class="course-footer">
+            <span class="price gold">₹20,000</span>
+            <a href="https://wa.me/918208526332" target="_blank" class="btn btn-primary btn-sm">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section class="section" id="experience">
+    <div class="container reveal">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Professional <span class="gold">Timeline</span></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2020 – Present</span>
+              <span class="timeline-status active">Active</span>
+            </div>
+            <h3>Founder & CEO — Tushar Kale Trading Academy</h3>
+            <p>Founded comprehensive stock market education platform, trained 1500+ students in trading strategies, technical analysis, and risk management.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2021 – Present</span>
+              <span class="timeline-status active">Active</span>
+            </div>
+            <h3>Director — Xworks Solutions Pvt Ltd</h3>
+            <p>Leading gig economy and IT solutions company providing technology platforms and digital transformation services.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2017 – Present</span>
+              <span class="timeline-status active">Active</span>
+            </div>
+            <h3>Founder — DriveUber.in</h3>
+            <p>Building mobility tech solutions for driver-partners across ride-hailing platforms.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2015 – Present</span>
+              <span class="timeline-status partnership">Partnership</span>
+            </div>
+            <h3>Channel Partner — Uber</h3>
+            <p>Managed driver partnerships and fleet operations, handled onboarding and training for 500+ driver-partners across multiple cities.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2020 – 2022</span>
+              <span class="timeline-status pivoted">Pivoted</span>
+            </div>
+            <h3>Founder & MD — The Kitchen Station</h3>
+            <p>Founded cloud kitchen and food logistics venture, optimized operations and supply chain management before strategic pivot.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2013 – 2021</span>
+              <span class="timeline-status scaled">Scaled</span>
+            </div>
+            <h3>Founder — MyCab</h3>
+            <p>Established and scaled cab service platform across multiple cities, focusing on reliable transportation solutions and driver welfare.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-meta">
+              <span class="timeline-year">2010 – 2012</span>
+              <span class="timeline-status early">Early Career</span>
+            </div>
+            <h3>Delivery Manager — TastyKhana.in & Dial-a-meal</h3>
+            <p>Managed delivery operations and logistics for food delivery platforms, optimized delivery routes and customer satisfaction metrics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-dark" id="gallery">
+    <div class="container reveal">
+      <div class="section-label">Behind the Scenes</div>
+      <h2 class="section-title">My <span class="gold">Journey in Pictures</span></h2>
+      <p class="gallery-intro">Follow my entrepreneurial journey, speaking engagements, and daily insights on Instagram</p>
+      <div class="gallery-grid">
+        <a href="https://instagram.com/tusharkale.in" target="_blank" class="gallery-item glass-card">
+          <div class="gallery-icon"><i class="fas fa-microphone-alt"></i></div>
+          <span>Speaking Events</span>
+        </a>
+        <a href="https://instagram.com/tusharkale.in" target="_blank" class="gallery-item glass-card">
+          <div class="gallery-icon"><i class="fas fa-chart-candlestick"></i></div>
+          <span>Trading Setup</span>
+        </a>
+        <a href="https://instagram.com/tusharkale.in" target="_blank" class="gallery-item glass-card">
+          <div class="gallery-icon"><i class="fas fa-users"></i></div>
+          <span>Team Meetings</span>
+        </a>
+        <a href="https://instagram.com/tusharkale.in" target="_blank" class="gallery-item glass-card">
+          <div class="gallery-icon"><i class="fas fa-trophy"></i></div>
+          <span>Success Stories</span>
+        </a>
+      </div>
+      <div class="gallery-cta">
+        <a href="https://instagram.com/tusharkale.in" target="_blank" class="btn btn-primary">
+          <i class="fab fa-instagram"></i> Follow @tusharkale.in
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container reveal">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's <span class="gold">Connect</span></h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">Interested in partnerships, speaking opportunities, trading courses, or business collaborations? Let's connect and explore how we can create value together.</p>
+          <div class="contact-links">
+            <a href="mailto:tusharkale2008@gmail.com" class="contact-item glass-card">
+              <i class="fas fa-envelope gold-icon"></i>
+              <div>
+                <strong>Email</strong>
+                <span>tusharkale2008@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+918208526332" class="contact-item glass-card">
+              <i class="fas fa-phone gold-icon"></i>
+              <div>
+                <strong>Phone</strong>
+                <span>+91 8208526332</span>
+              </div>
+            </a>
+            <a href="https://wa.me/918208526332" target="_blank" class="contact-item glass-card">
+              <i class="fab fa-whatsapp gold-icon"></i>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>Chat directly</span>
+              </div>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/tusharkale" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/tusharkale.in" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918208526332" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:tusharkale2008@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Write your message here..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fas fa-paper-plane"></i></button>
+          <p class="form-success" id="form-success">Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="#" class="nav-logo">TK<span class="dot">.</span></a>
+          <p class="footer-tagline">Serial Entrepreneur • Trading Mentor • Tech Visionary</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#ventures">Ventures</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/tusharkale" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/tusharkale.in" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/918208526332" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:tusharkale2008@gmail.com" class="social-btn"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Tushar Kale. All rights reserved.</p>
+        <p>Built with passion from Pune, India 🇮🇳</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
